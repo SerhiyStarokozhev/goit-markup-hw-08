@@ -1,0 +1,25 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(tablet-only) {
+    max-width: 768px;
+  }
+  @include mq(desktop){
+    max-width: 1600px;
+  }
+}
+
+.catalog__container,
+.clients__container{
+   @include mq(mobile-only) {
+    max-width: 480px;
+  }
+}
+.team__container{
+  @include mq(desktop){
+    max-width: 1200px;
+  }
+}
