@@ -4,22 +4,28 @@
 
   margin-left: auto;
   margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+
   @include mq(tablet-only) {
     max-width: 768px;
   }
-  @include mq(desktop){
+
+  @include mq(desktop) {
     max-width: 1600px;
   }
 }
 
+.feature__container,
 .catalog__container,
-.clients__container{
-   @include mq(mobile-only) {
+.clients__container {
+  @include mq(mobile-only) {
     max-width: 480px;
   }
 }
-.team__container{
-  @include mq(desktop){
+
+.team__container {
+  @include mq(desktop) {
     max-width: 1200px;
   }
 }
